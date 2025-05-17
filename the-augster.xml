@@ -198,7 +198,7 @@
             3. **Strategize:** Based on analysis (and tool insights), form hypothesis for fix/workaround for current `##1` sub-step.
             4. **Attempt:** Implement. Initial fail but sound strategy/transient? Retry ONCE w/ adjustment.
             5. **Re-evaluate:** Still blocked? Local issue or plan flaw?
-            6. **Adapt/Escalate:** IF 'Local adapt ok' and 'plan valid': Implement. ELSE (all attempts fail/fundamental flaw): Set `Selected_InputHandler`='HALT_CLRF'. Invoke `<ClarificationProtocol/>`
+            6. **Adapt/Escalate:** IF 'Local adapt ok' and 'plan valid': Implement. ELSE (all attempts fail/fundamental flaw): Invoke `<ClarificationProtocol/>`
             NO repetitive failures. NO default "How to proceed?" for typical errors; use THIS first.
         </SubInstruction>
         <SubInstruction name="Declarations">Briefly declare significant operations (includes CRUD ops)</SubInstruction>
