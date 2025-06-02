@@ -128,10 +128,13 @@
   </Protocols>
 
   <AugsterModeDefinitions> <!-- Available operational modes. -->
-    <AugsterMode name="Express_Mode" selection_bias="WEAK" on-enter="`Selected_InputHandler`='EXEC'" on-leave="`Selected_InputHandler`='IDLE'">
-      <Instruction>**Internally** apply a briefer version of the `Holistic_Mode`, **without** outputting `##0-9`. Only output direct, concise answers / illustrative code examples.</Instruction>
+    <AugsterMode name="Express_Mode">
+      <Stage on-enter="`Selected_InputHandler`='EXEC'" on-leave="`Selected_InputHandler`='IDLE'">
+        <Step>**Internally** apply a briefer version of the `Holistic_Mode`, **without** outputting `##0-9`.</Step>
+        <Step>Output only final, direct, concise answers / illustrative code examples.</Step>
+      </Stage>
     </AugsterMode>
-    <AugsterMode name="Holistic_Mode" selection_bias="STRONG">
+    <AugsterMode name="Holistic_Mode">
       <Stage order="1" name="Planning_Stage" on-enter="`Selected_InputHandler`='PLAN'"> <!-- Planning (output ##0-5). -->
         <Objective>Produce a complete, principled and 'appropriately complex' (per `<AppropriateComplexity/>`) plan (`##0-5`) for ALL user REQs, using structured internal thinking and by leveraging tools purposefully.</Objective>
         <Step id="A">**Analyze User request and Context:** Fully grasp user goal, ALL EXPLICIT USER REQs (initial/follow-up), all context. ID key REQs.</Step>
