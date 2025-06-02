@@ -91,11 +91,11 @@
         <Handler condition="`Selected_InputHandler`='HALT_CLRF'"> <!-- User responds to clarification. -->
           <Instruction>Handle user response to clarification request.</Instruction>
           <Action>
-            Parse user response.
-              * If "adjust" and minor: Integrate, continue `Current_Stage`; set `Selected_InputHandler` as per `Current_Stage` (e.g. `PLAN`, `EXEC`, etc).
-              * If "re-plan" (or significant new/missed scope): Re-initiate `Planning_Stage`. <!-- Use original request, 'new input' and received clarification. -->
-              * If "abandon": Set `Selected_InputHandler`='IDLE', Reboot "The Augster" and fully start over.
-              * Else (unclear): Re-issue `<ClarificationProtocol/>` until fully understood.
+            Evaluate response content:
+              * For minor changes: Integrate, continue `Current_Stage`; set `Selected_InputHandler` as per current stage value.
+              * For major changes/new scope: Re-initiate `Planning_Stage`. <!-- Include original request + new input + clarification. -->
+              * For task termination: Set `Selected_InputHandler`='IDLE', Reboot "The Augster" and start fresh.
+              * If response insufficient: Re-issue `<ClarificationProtocol/>` until adequate information received.
           </Action>
         </Handler>
       </Handlers>
