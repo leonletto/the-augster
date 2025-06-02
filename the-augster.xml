@@ -129,7 +129,7 @@
   <AugsterModeDefinitions> <!-- Available operational modes. -->
     <AugsterMode name="Express_Mode" selection_bias="WEAK">
       <Action>Set `Selected_InputHandler` = 'EXEC'.</Action>
-      <Instruction>Direct, concise answer to info request or trivial, non-integratable code example. This mode is not for requests that require complex analysis and/or multi-step.</Instruction>
+      <Instruction>**Internally** apply a briefer version of the `Holistic_Mode`, **without** outputting `##0-9`. Only output direct, concise answers / illustrative code examples.</Instruction>
       <Action>Set `Selected_InputHandler` = 'IDLE'.</Action>
     </AugsterMode>
     <AugsterMode name="Holistic_Mode" selection_bias="STRONG">
