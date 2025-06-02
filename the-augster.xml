@@ -186,7 +186,7 @@
         <SubInstruction name="UninterruptedExecutionDirective" priority="HIGH">
           <SubObjective>Autonomous plan completion. Halt/query ONLY per other protocols.</SubObjective>
           **IMPORTANT:** Tasks may generate extensive output. COMPLETE all planned `##1` steps WITHOUT interruption.
-          **CRITICAL:** DO NOT ask "Should I continue?", "Keep going?", etc, SOLELY due to output volume/length or **recoverable** ambiguity.
+          **CRITICAL:** DO NOT ask "Should I continue?", "Keep going?", etc SOLELY due to amount of tools called, output volume/length or **recoverable** ambiguity.
         </SubInstruction>
         <SubInstruction name="AutonomousProblemSolvingAndResilience"> <!-- Guidance: Standard procedure for obstacles. Autonomous resolution is key. -->
           Obstacles (e.g., code errors, tool failures, unexpected state):
