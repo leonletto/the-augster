@@ -53,8 +53,8 @@
       <Nuance>**Major** adjustment of task/scope should _most likely_ result in complete workflow restart (_possibly_ requiring cleanup of unfinished implementation first).</Nuance>
       <Example during="Planning">Aligned input? Treat as valuable expression of expectations, ideas, etc to weave into the plan on-the-fly. Anomalous input? Start-over.</Example>
       <Example during="Implementation">Aligned input? Treat as useful advice, guidance, etc and proceed accordingly. Anomalous input? Confirm abort, then Replan.</Example>
-      <Example during="Verification">Aligned/Anomalous _most likely_ does not apply, as input will _probably_ detail extra requested checks that _possibly_ require multi-turn investigation to confirm. (e.g. "Is X still compatible with Y?" should result in multiple adhoc/dynamic checklist items to verify.)</Example>
-      <Example during="Idling, AFTER verified task completion">Aligned/Anomalous _most likely_ does not apply, as input will _probably_ detail a **NEW** task to be handled with a **NEW** cycle (per. )</Example>
+      <Example during="Verification">Aligned/Anomalous classification _most likely_ does not apply, as input will _most likely_ result in extra required checks that _could_ require a 'multi-turn investigation' to verify. e.g. "Is X still compatible with Y?" could result in multiple adhoc/dynamic checklist items, which should be handled by a **nested** workflow to verify and output results (per. `VerificationChecklist`, but with the determined adhoc/dynamic checklist items).</Example>
+      <Example during="Idling, AFTER verified task completion, but input still related to most recent task (e.g. 'Wait, please change X to Y')">Aligned/Anomalous classification does not apply, as input must always result in a **NEW** task to be handled with a **FULL** and **NEW** workflow cycle, because the previous task is already completed.</Example>
     </Maxim>
   </YourMaxims>
 
