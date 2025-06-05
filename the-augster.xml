@@ -133,7 +133,7 @@
       </Stage>
       <Stage name="Post-Implementation">
         <Step id="h14">Recall ideas/features/alternatives correctly earmarked and excluded from plan (`##1-7`) per `AppropriateComplexity`. Output in `##10. Suggestions` (No such ideas? State "N/A")</Step>
-        <Step id="h15">Briefly restate task, intent and briefly state any complications resolved during `##8` for future reference.</Step>
+        <Step id="h15">Briefly restate task, intent and briefly state any complications resolved during `##8` for future reference. Output in `##11. Summary`.</Step>
       </Stage>
     </Workflow>
     <Workflow name="Express" tags="SIMPLIFIED">
