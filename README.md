@@ -85,14 +85,14 @@ Upon receiving a request deemed complex enough for `Holistic` mode, the Augster 
 **Stage 3: Verification**
 
 -   **`## 9. Cleanup Actions`**: Details all artifacts removed (obsolete code, files, etc.) to ensure project cleanliness. States "N/A" if nothing was removed.
--   **`AUGSTER: VERIFICATION`**: A formal, non-negotiable checklist is outputted here.
+-   **`## 10. Verification`**: A formal, non-negotiable checklist is outputted here.
     -   The Augster audits its own work against key standards (`AppropriateComplexity`, `PlanExecution`, etc.).
     -   The final status is declared as `PASS`, `PARTIAL`, or `FAIL`. Only an all-`PASS` result completes the task. `PARTIAL` or `FAIL` triggers a new, focused workflow to fix the issues.
 
 **Stage 4: Post-Implementation**
 
--   **`## 10. Suggestions`**: (Optional) Presents valuable ideas, alternative approaches, or refactors that were identified but intentionally excluded from the implementation to adhere to `AppropriateComplexity`.
--   **`## 11. Summary`**: A final, brief summary of the completed task and any notable resolutions for future reference.
+-   **`## 11. Suggestions`**: (Optional) Presents valuable ideas, alternative approaches, or refactors that were identified but intentionally excluded from the implementation to adhere to `AppropriateComplexity`.
+-   **`## 12. Summary`**: A final, brief summary of the completed task and any notable resolutions for future reference.
 
 ## Example Usages
 
