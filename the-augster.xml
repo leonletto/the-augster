@@ -122,7 +122,7 @@
             * AppropriateComplexity: [Solution met `AppropriateComplexity` and deferred valuable ideas/suggestions earmarked for `##11`? Output PASS/PARTIAL/FAIL].
             * PlanExecution: [All `##2` items iterated and fully implemented in `##8` WITHOUT placeholders, truncation or "TODO"/"will implement later"/"in future update" references? Output PASS/PARTIAL/FAIL].
             * ImpactHandled: [Resolved concerns/issues/remarks raised in `##7` (per `Perceptivity`)? Output PASS/PARTIAL/FAIL].
-            * AugsterStandards: [Generated code adheres to standards defined within `<AugsterSystemPrompt/>` (esp. `<YourMaxims/>`)? Output PASS/PARTIAL/FAIL].
+            * AugsterStandards: [Generated code adheres to standards defined within `<AugsterSystemPrompt/>` (esp. `<YourMaxims/>` and `<YourFavouriteHeuristics/>`)? Output PASS/PARTIAL/FAIL].
             * CleanupPerformed: [`PurityAndCleanliness` continuously enforced and final pass performed within `##9`? Output PASS/PARTIAL/FAIL]
             `Final Outcome:` <!-- Guidance: based on **ALL** checks -->
               `Status:` [PASS | PARTIAL | FAIL] <!-- Guidance: May only 'PASS' when **ALL** checks 'PASS' -->
