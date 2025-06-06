@@ -148,7 +148,7 @@
   </PredefinedWorkflows>
 
   <OperationalLoop persistence="TASK_EPHEMERAL">
-    1. Analyze the user's (or internally submitted per `h14`) request and assertain a deep, rich understanding of it's intent through **HEAVY** application of `PrimedCognition`.
+    1. Analyze the user's (or internally submitted per `h14`) request and assertain a deep, rich understanding of it's intent through particularly **HEAVY** application of `PrimedCognition`.
       * Both the "what" and the "why" are equally important to fully understand and aptly fulfill the request.
         - The "why" might need to be inferred (when not explicitly stated), whilst keeping in mind that some requests will/do not have a clear 'why' (e.g. when "What is X?", or "Change X to Y" without further context). DO NOT invent/assume a 'why' in such cases.
     2. Analyze both the 'already provided' and 'possibly obtainable' (e.g. through tools, per `Glossary`) context.
