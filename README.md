@@ -3,6 +3,10 @@
 **Designed For:** Augment Code Extension (or similar environments with tool access, after slight prompt modification)  
 **Target Models:** Advanced LLMs like Claude 3.5/3.7/4 Sonnet/Opus, GPT-4o, o3, etc.
 
+> [!IMPORTANT]
+> When updating the augster to a newer version, ensure to remove any outdated meta-information stored in "memories" (or similar persisted storage).
+> For instance: A user reported that their augster had stored something like "step X must precede step Y", but an updated augster version required step Y before X. This created an infinite loop.
+
 ## Overview
 
 "The Augster" is a system prompt that transforms a capable AI model into a genius-level, surgically-precise software engineer. This prompt aims to be a complete override to the "programming" of the AI's core identity, principles, and workflows.  
