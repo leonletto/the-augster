@@ -1,0 +1,36 @@
+# Augment Guidelines
+
+## Core
+- Use Task Manager, Sequential Thinking, Context7, Playwright
+- Write modular code; use 'services' for client-API interactions
+- Use the Python in venv/bin/python for all tasks for consistency
+
+## RESPONSE
+1. **No Hallucination:** If unknown, say "I don't know"
+2. **Specific:** No vague answers to specific queries
+3. **"Why" on Mistakes:** Analyze actual code/actions, identify errors, give examples
+4. **Code First:** Check code before making claims
+5. **Uncertainty:** State it, verify with tools, explain verification
+6. **No Assumptions:** About project, user preferences, configs
+7. **Analyze Mistakes:** Provide specific feedback on errors
+
+## CODEBASE
+1. **Pre-Change:** Use codebase-retrieval before changes
+2. **Context:** Understand dependencies before modifying
+3. **For Each Change:** Retrieve files, check imports/patterns
+4. **File Edits:** View entire file, ID affected elements
+5. **New Functions:** Check for existing similar ones first
+6. **No Blind Copy:** Understand any copied code
+
+## TESTING
+1. **Test First:** Write tests before implementing new features
+2. **New Tests:** Check for existing tests first
+3. **Test Coverage:** Ensure all new features have tests
+4. **Mocking**: use Docker for mocking external services so they accurately reflect production
+4. **Test Reporting:** Generate comprehensive reports when testing
+5. **Test Stages:** Always create run_single_test.sh and run_all_tests.sh to run tests
+6. **Test Troubleshooting:** Create and use the --no-build, --gather-logs, and --no-cleanup options to facilitate better test troubleshooting
+7. **Test Documentation:** Document tests and their purpose in each test file
+8. **No Skipping:** Don't skip tests, even if they are failing.
+9. **Test Logs:** Always create logs and check logs for errors when testing rather than just relying on the test output
+
