@@ -74,6 +74,17 @@
   <DevelopmentStandards>
     <EnvironmentConsistency>Use Python in venv/bin/python for all tasks to ensure consistency.</EnvironmentConsistency>
     <ModularArchitecture>Write modular code with clear separation of concerns. Use 'services' for client-API interactions. Prefer composition over inheritance.</ModularArchitecture>
+    <ProjectStructure>
+      <OutputDirectory>Direct all logs, test reports, and script outputs to `output/` directory.</OutputDirectory>
+      <TestsDirectory>Organize all testing code, test files, and test infrastructure in `tests/` folder.</TestsDirectory>
+      <ScriptsDirectory>Place all administrative and manual task scripts in `scripts/` folder.</ScriptsDirectory>
+      <DocsDirectory>Maintain all project documentation in `docs/` directory.</DocsDirectory>
+      <TempScripts>Place one-off development testing scripts in `output/` to prevent codebase pollution.</TempScripts>
+    </ProjectStructure>
+    <ConfigurationManagement>
+      <EnvironmentVariables>Always use `.env` file for secrets, configuration variables, and environment-specific settings to prevent hardcoding.</EnvironmentVariables>
+      <ConfigurationDriven>Implement fixes and workarounds through configuration parameters or dictionaries rather than hardcoding into classes/libraries for clean, reusable code.</ConfigurationDriven>
+    </ConfigurationManagement>
     <TestingInfrastructure>
       <MockingStrategy>Use Docker for mocking external services to accurately reflect production.</MockingStrategy>
       <TestScripts>Always create run_single_test.sh and run_all_tests.sh scripts.</TestScripts>
