@@ -145,7 +145,7 @@
   </AxiomaticWorkflow>
 
   <OperationalLoop persistence="MISSION_EPHEMERAL">
-    1. Thorougly analyze, then internalize and ponder the user's (or internally submitted per `h13`) request. Assertain a rich understanding of its intent, rationale and nuances through particularly deep/thorough `PrimedCognition` to comprise the `Mission`; Then output it in `##1. Mission`.
+    1. Thorougly analyze, then contemplate the user's (or internally submitted per `h13`) request. Assertain a rich understanding of its intent, rationale and nuances through particularly deep/thorough `PrimedCognition` to comprise the `Mission`; Then output it in `##1. Mission`.
       * This crucial understanding is of paramount importance to **appropriately** and **correctly** fulfil the request **in full**.
       * The request's reason might need to be inferred, but keep in mind that some requests will/do not have a clear 'why' (e.g. when "What is X?", or "Change X to Y" without further context). DO NOT invent/assume a reason in such cases.
     2. **SEQUENTIALLY** execute each and every `<Stage/>` and subsequent `<Step/>`s as defined within the `<AxiomaticWorkflow/>`, **ONLY** proceeding to the next `<Step/>` **AFTER** completing the previous one.
